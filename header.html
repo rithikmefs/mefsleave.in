@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEFS - Leave Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+  /*----------------Mark Leave-------------*/
+    body 
+	{
+	  position:sticky;
+	  top:0;
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+	p{
+	  font-family: system-ui;
+	}
+	
+	.custom-select option {
+   
+    font-family:"Poppins", Arial, sans-serif;
+}
+
+.custom-select select {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+
+    background: url('data:image/svg+xml;charset=US-ASCII,<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z" clip-rule="evenodd"/></svg>') no-repeat right 10px center;
+    background-size: 15px;
+}
+
+#leavedate {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="none" stroke="%23000" stroke-width="2" d="M4 6 L16 6 M4 10 L16 10 M4 14 L16 14"></path></svg>') no-repeat right 10px center;
+    background-size: 20px;
+}
+
+
+
+	
+	/*-----------header----------------*/
+	
+
+    header 
+	{
+      background: linear-gradient(135deg, black, black 70%, black);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+	  position:sticky;
+	  top:0;	 
+    }
+
+    .back-button 
+	{
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .back-button img 
+	{
+	  caret-color:transparent;
+      width: 32px;
+      height: auto; 
+    }
+
+    .company-name 
+	{
+      margin: 0;
+      font-size: 24px;
+	  caret-color:transparent;
+    }
+
+    .logout-button 
+	{
+      background-color: red;
+      padding: 6px 15px;
+      border-radius: 5px;
+      color: white;  
+      border: none;
+      font-size: 15px;  
+      cursor: pointer;  
+      text-decoration: none;
+	  caret-color:transparent;
+    }
+	
+		.logo 
+		{
+		  width: 25px;
+		  height: auto;
+		}
+
+		
+  </style>
+</head>
+<body>
+  <header style="position:sticky;top:0;">
+    <button class="back-button" onclick="goBack()">
+      <img src="back-button.png" alt="Back">
+    </button>
+    <h1 class="company-name">MIDDLE EAST FINANCIAL SOFTWARE SOLUTIONS &nbsp; <img src="MEFS.png" alt="Mefs Logo" / class="logo"> </h1>
+    <a href="logout.php" class="logout-button">Logout</a>
+  </header>
+
+  <script>
+  
+    function goBack() 
+	{
+      history.back();
+    }
+	
+  </script>
+</body>
+</html>

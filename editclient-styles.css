@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #f1e7ca;
+}
+
+.main{
+    padding: 10px;;
+}
+
+.container{
+    position: absolute;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;    
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container .title{
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #fac826;
+}
+
+.container form .client-details{
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .client-details .input-box{
+    margin-bottom:15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.client-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* css for input feild border and focus */
+.client-details .input-box input {
+    display: block;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+}
+
+.client-details .input-box.password-field input {
+    display: block;
+    height: 45px;
+    width: 213%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+}
+
+
+
+
+.client-details .input-box input:focus {
+    border-color: #007bff; 
+    border-bottom-width: 2px;
+}
+/* css for select tag */
+.client-details .input-box select {
+    display: block;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+}
+
+.client-details .input-box select:focus {
+    border-color: #007bff; 
+    border-bottom-width: 2px; 
+}
+/* end of css for select tag */
+
+
+.radio-container{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #000000;
+    background: #ffc815;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;;
+    cursor: pointer;
+}
+
+form .button input:hover{
+    background: #f3ba00;
+}
+
+
+

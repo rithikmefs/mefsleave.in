@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background:   #f3f4f8;
+}
+
+
+.main{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    background: white;
+    padding: 20px 25px; 
+    border-radius: 5px;    
+    position: relative;
+    margin-top: 10px;
+    width: calc(100% - 50px); 
+    margin-left: 25px;
+}
+
+.container .title{
+    font-size: 31px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+/* Table search */
+#myInput {
+    width: 40%; 
+    font-size: 14px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
+    border-radius: 20px;
+  }
+  
+  #dataTable {
+    border-collapse: collapse; 
+    width: 100%; 
+    border: 1px solid #ddd; 
+    font-size: 14px;
+  }
+  /* Table search end*/
+
+ /* Onboard button*/
+ .onboard-button {
+    position: absolute; 
+    top: 26px; 
+    right: 36px; 
+    padding: 10px 20px;
+    background-color: #ffc815;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.onboard-button:hover {
+    background-color: #ffc400;
+    box-shadow: 0 0 20px rgba(201, 155, 7, 0.7); /* Light projection effect */
+}
+
+
+ /* Onboard button end*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #f7e3ba;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color:  #f7e3ba;
+    color: #333;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e0f0f8;
+}
+
+/* edit icon css */
+.edit-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.edit-icon:hover {
+    transform: scale(1.2); 
+}
